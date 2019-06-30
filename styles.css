@@ -10,11 +10,6 @@ html{
     font-weight: 400;
 }
 
-.titulo{
-    font-size: 20px;
-    color: red;
-}
-
 h3{
     color:#535456;
     margin-bottom: 25px;
@@ -24,41 +19,25 @@ h3{
 #header{
     width: 100%;
     text-align: center;
+    margin-bottom: 100px;
 }
 
-.sec1{
-    margin-top: 100px;
-}
-
-.sec2{
-    margin-top: 700px;
-}
-
-.sec3{
-    margin-top: 1300px;
-}
-
-.sec4{
-    margin-top: 1900px;
-}
-
-.sec5{
-    margin-top: 2500px;
+section{
+    width: 1000px;
+    margin: auto;
 }
 
 .container-left{
     width: 50%;
-    float: left;
-    height: 200px;
-    margin-left: 420px;
+   float: left;
+    height: 600px;
 }
 
 .container-right{
     width: 50%;
-    float: right;
-    height: 200px;
-    margin-right: 7px;
-    margin-top: -185px;
+    float: left;
+    height: 600px;
+    
 }
 
 .h3colocado{
@@ -72,74 +51,77 @@ h3{
     font-size: 1.2rem;
     color: #2d2b31;
     line-height: 2.6rem;
-    padding-right: 520px;
 }
 
 .tituloAbajo{
-    margin-top: 3050px;
     text-align: center;
-    
+    clear: both;
 }
 
-#cajaFormulario{
-    margin-top: 1px;                                                                           /* porq tuve que poneer margin top 1 para cuadrarlo venia ya por el 3k  */
+#cajaFormulario{                                                            
     text-align: center;
     background-color: #9bccbb;
+    width: 100%;
+   
 }
 
-.formControl{
+.boxForm{
+    width: 900px;
+    margin: auto;
+}
+
+.formu1 {
+    float: left;
+    width: 50%;
+}
+
+.formu1 input{
+    border: none;
+    border-bottom:  #2d2b31  2px solid;
     background-color: transparent;
+    width: 430px;
+    padding-top: 20px;
 }
 
-#nombre{
-     /* float: left; */
-    font-size: 20px;
-}
-                                                                     /* imposible posicionar con los float creo que es porq no tienen un contenedor */                                 
-#correo{
-    /* float: right; */
-    font-size: 20px;
+.textoForm{
+    width: 880px;
+    float: left; 
+    margin-top: 20px;
 }
 
-#fech{
-    font-size: 20px;
+.textoForm input{
+    border: none;
+    border-bottom:  #2d2b31  2px solid;
+    background-color: transparent;
+    width: 900px;
+    padding-top: 20px;
 }
 
-#mensaje{
+.textoForm textarea{
+    border: none;
+    border-bottom:  #2d2b31  2px solid;
+    background-color: transparent;
+    width: 900px;
+    padding-top: 40px;
+}
+
+label{
+    float: left;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 footer{
     text-align: center;
-    /* list-style-type: disc;
-    display:inline; */
 }
                       
-.orden{
-    text-align: center;                            /* problema para alinear las imagenes de redes, no entiendo si le puse el display en footer que contiene todo y no funciona"*/
-    list-style-type: disc;                          /*  digo vale me voy a .orden que es la "UL que contiene las listas tampoco funciona, me funciono poniendo el display*/
-    /* display:inline; */                          /* directamente en la lista es decir .order2, no tengo tampoco claro el atributo display :inline,block,inlineblock */
+ul{
+    list-style: none;
+    width: 185px;
+    margin: auto;
 }
 
-.orden2{
-    display:inline-block;
-
+ul li{
+    float: left;
 }
 
-
-                                             /* no pude poner el formulario el name y email en la misma linea no me quedaba bien ni con el float, necesito aprender el box modeling 
-                                             para hacer ese modelo y organizar y trabajar por cajas la pagina es mas facil creo yo, asi hubiese podido hacer las cajas del inicio
-                                             de la pag de imagen y parrafo - parrafo imagen y no tener la cochinada de codigo que tengo en mi html que es nda funcional, el button 
-                                             de SEND no lo supe poner mas grande
-
-                                             otra preg que esta comentada en el index.html sobre porque sin el id en input no me sirve el atributo for para la funcion del clik 
-
-                                             en el <form habia puesto class="formControl" > para desde alli me afectara todo lo que habia en formulario y el font size afectara
-                                             la letra de todo y no funcionaba por eso tuve que crear... nombre,correo,mensaje,fecha 
-
-                                             vamos que es una mierda de codigo asi este parecido, necesito ootra clasesita jaaja yo creo que ppara saber posicionar las cosas,
-                                             hacer cajas,y que etiquetas me contienen a otras, ejemplo pense que afectando la etiqueta form  y footer pense que afectaba todas
-                                             las de dentro pero no, solo me servia para afectar ciertas cosas, y bueno el atributo display.... basicamente si supiera un poco mejor
-                                             todo esoo podria repetir la pag desde 0 y hacerla mejor */
-
-                                             /* ah y el .formControl no me afecto a textarea para poner el recuaadro transparente pero todos los otros inputs si */
